@@ -5,8 +5,10 @@ import { ProyectsHeader } from "@/components/ProyectsHeader";
 export default function Home() {
   return (
     <>
-      <MainHeader />
-      <Presentation />
+      <div className="flex flex-col flex-1 gap-20">
+        <MainHeader />
+        <Presentation />
+      </div>
       <ProyectsHeader />
     </>
   );

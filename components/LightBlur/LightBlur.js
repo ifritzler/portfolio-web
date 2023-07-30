@@ -1,9 +1,9 @@
 "use client";
 
-function LightBlur({ hexColor }) {
+function LightBlur({ hexColor, position}) {
   return (
     <div
-      className={`absolute w-[166px] h-[166px] blur-[170px] right-0 -z-50`}
+      className={`absolute w-[166px] h-[166px] blur-[170px] ${position === "right" ? "right-0" : "left-0"} -z-50`}
       style={{ backgroundColor: hexColor }}
     ></div>
   );

@@ -1,5 +1,6 @@
-import React from "react";
+"use client";
 import { CodeSnippetHighlighted } from "../CodeSnippetHighlighted";
+import { motion } from "framer-motion";
 
 function Presentation() {
   return (
@@ -14,9 +15,17 @@ function Presentation() {
             conversation with me. I look forward to connecting with you!
           </p>
         </div>
-        <button className="flex p-4 justify-center items-center w-full rounded-2xl bg-[#FF3162]">
-          <span className="font-semibold text-white">Contact me</span>
-        </button>
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{
+            scale: 0.8,
+          }}
+          className="flex p-4 justify-center items-center w-full rounded-2xl bg-[#FF3162]"
+        >
+          <a href="#" className="font-semibold text-white">
+            Contact me
+          </a>
+        </motion.button>
       </div>
       <CodeSnippetHighlighted />
     </section>
