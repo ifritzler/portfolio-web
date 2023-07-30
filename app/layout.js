@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={workSans.className}>
         <Navbar />
-        <main className="flex min-h-screen flex-col justify-start px-36 mt-32 gap-12">
+        <main className="flex flex-1 flex-col justify-start px-36 mt-32 gap-12">
           {children}
         </main>
       </body>

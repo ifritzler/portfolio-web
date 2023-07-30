@@ -1,11 +1,11 @@
-import MainHeader from "@/components/MainHeader/MainHeader";
-import Presentation from "@/components/Presentation/Presentation";
+import { MainHeader } from "@/components/MainHeader";
+import { Presentation } from "@/components/Presentation";
 
 export default function Home() {
   return (
     <>
-    <MainHeader />
-    <Presentation />
+      <MainHeader />
+      <Presentation />
     </>
   );
 }

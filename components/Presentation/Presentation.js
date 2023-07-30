@@ -1,9 +1,10 @@
 import React from "react";
+import { CodeSnippetHighlighted } from "../CodeSnippetHighlighted";
 
 function Presentation() {
   return (
-    <section>
-      <div className="flex flex-col gap-6 max-w-lg">
+    <section className="flex justify-between gap-24">
+      <div className="flex flex-col gap-6 flex-1 max-w-lg">
         <div>
           <h2 className="font-semibold leading-6">Welcome to my portfolio!</h2>
           <p className="max-w-lg">
@@ -17,6 +18,7 @@ function Presentation() {
           <span className="font-semibold text-white">Contact me</span>
         </button>
       </div>
+      <CodeSnippetHighlighted />
     </section>
   );
 }

@@ -1,9 +1,9 @@
 import React from "react";
-import IconLinkedin from "../IconLinkedin";
-import IconGithub from "../IconGithub";
-import IconDocuments from "../IconDocuments";
-import SocialButton from "../SocialButton/SocialButton";
-import LightBlur from "../LightBlur/LightBlur";
+import { IconLinkedin } from "../icons";
+import { IconGithub } from "../icons";
+import { IconDocuments } from "../icons";
+import { LightBlur } from "../LightBlur";
+import { SocialButton } from "../SocialButton";
 
 function MainHeader() {
   return (
