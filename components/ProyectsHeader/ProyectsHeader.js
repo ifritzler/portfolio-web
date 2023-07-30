@@ -15,10 +15,10 @@ function ProyectsHeader() {
 
   return (
     <section
-      className="flex transition duration-700 p-8 gap-16 justify-center items-center -translate-x-full mt-16"
+      className="flex flex-col sm:flex-row transition duration-700 p-8 gap-16 justify-center items-center -translate-x-full md:mt-16"
       id="projects-section"
     >
-      <div className="max-w-lg">
+      <div className="max-w-lg order-2 md:order-1">
         <h2 className="font-bold text-3xl">PROJECTS</h2>
         <p className="leading-7 font-light max-w-md">
           Here, you can explore my public projects and their implementations. If
@@ -32,7 +32,7 @@ function ProyectsHeader() {
         alt="Profile picture"
         width={270}
         height={270}
-        className="rounded-full"
+        className="rounded-full order-1 md:order-2 w-44 h-44 md:w-[270px] md:h-[270px]"
       />
       <LightBlur hexColor={"orange"} position={"right"} />
     </section>

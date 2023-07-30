@@ -13,9 +13,9 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body className={workSans.className}>
+      <body className={workSans.className} style={{paddingInline: "1rem"}}>
         <Navbar />
-        <main className="flex flex-1 flex-col justify-start px-36 mt-32 gap-12">
+        <main className="flex flex-1 flex-col justify-start lg:px-36 md:px-16 mt-32 gap-12">
           {children}
         </main>
       </body>

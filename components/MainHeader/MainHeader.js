@@ -10,10 +10,10 @@ function MainHeader() {
   const name = "ILAN";
   const lastname = "FRITZLER";
   return (
-    <section className="flex justify-between py-4">
-      <section className="relative flex flex-col justify-center items-start max-w-fit">
-        <span className="text-[2rem]">HI THERE! I’M</span>
-        <h1 className="text-[4rem] font-bold leading-[4rem]">
+    <section className="flex flex-col lg:flex-row justify-between py-4">
+      <section className="relative flex flex-col justify-center items-center mx-auto lg:items-start lg:mx-0 max-w-fit">
+        <span className="text-[1.5rem] sm:text-[2rem]">HI THERE! I’M</span>
+        <h1 className="text-[2.5rem] sm:text-[4rem] font-bold leading-[4rem]">
           <motion.span>
             {name.split("").map((letter, idx) => (
               <motion.span
@@ -40,8 +40,8 @@ function MainHeader() {
           </motion.span>
         </h1>
         <motion.p
-          className="text-[2rem] font-semibold opacity-0"
-          initial={{translateY: 20}}
+          className="text-[1.5rem] sm:text[2.5rem] font-semibold opacity-0"
+          initial={{ translateY: 20 }}
           animate={{ opacity: 1, translateY: 0 }}
           transition={{ duration: 0.6, delay: 1 }}
         >
@@ -51,8 +51,8 @@ function MainHeader() {
       </section>
 
       {/* Social networks */}
-      <section className="relative flex flex-col justify-center items-start gap-2 font-medium max-w-max m-40 my-0">
-        <h2>Social Networks</h2>
+      <section className="relative flex flex-col justify-center gap-2 font-medium max-w-max my-0 lg:items-start items-center mx-auto mt-8 lg:mg-40 lg:mx-0">
+        <h2>Please check my social Networks!</h2>
         <div className="flex justify-between items-center gap-2">
           <SocialButton
             label={"Linkedin"}
@@ -77,7 +77,7 @@ function MainHeader() {
           link={"/files/Curriculum - ES.pdf"}
           download={true}
         />
-        <LightBlur hexColor={"red"} position={"right"}/>
+        <LightBlur hexColor={"red"} position={"right"} />
       </section>
     </section>
   );

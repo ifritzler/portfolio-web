@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function Presentation() {
   return (
-    <section className="flex justify-between gap-24">
+    <section className="flex flex-col lg:flex-row justify-between items-center gap-12 lg:gap-24">
       <div className="flex flex-col gap-6 flex-1 max-w-lg">
         <div>
           <h2 className="font-semibold leading-6">Welcome to my portfolio!</h2>
