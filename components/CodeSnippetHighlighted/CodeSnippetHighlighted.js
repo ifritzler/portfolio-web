@@ -8,7 +8,7 @@ const jetbrainsFont = JetBrains_Mono({ display: "swap", subsets: ["latin"] });
 function CodeSnippetHighlighted() {
   return (
     <div
-      className={`relative flex flex-col justify-center bg-[#1B1C1B] p-6 rounded-2xl flex-1 max-w-lg ${jetbrainsFont.className} leading-6`}
+      className={`relative flex flex-col justify-center bg-[#1B1C1B] p-6 rounded-2xl flex-1 max-w-lg ${jetbrainsFont.className} leading-6 text-white`}
     >
       <IconJavascript className="absolute top-4 right-4 text-yellow-400 w-11 h-11"/>
       <div className="flex gap-6">

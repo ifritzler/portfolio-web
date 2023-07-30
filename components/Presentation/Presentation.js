@@ -7,7 +7,7 @@ function Presentation() {
       <div className="flex flex-col gap-6 flex-1 max-w-lg">
         <div>
           <h2 className="font-semibold leading-6">Welcome to my portfolio!</h2>
-          <p className="max-w-lg">
+          <p className="max-w-md font-light leading-7">
             If you are a recruiter or someone who is interested in my profile, I
             invite you to take a look around and learn more about me and my
             work. If you like what you see, feel free to reach out and start a
