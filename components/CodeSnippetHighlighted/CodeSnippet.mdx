@@ -1,6 +1,10 @@
 ```js
-const year = "2001"
-const movie = "Shrek"
+const url = 
+    "https://api.github.com/users/ifritzler"
 
-console.log(`${movie}, ${year}`)
+fetch(url)
+.then(response => response.json())
+.then(data => {
+  console.log(data);
+})
 ```

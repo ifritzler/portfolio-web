@@ -10,7 +10,7 @@ function ProyectsHeader() {
     inView(projectSection, (info) => {
       const animation = animate(info.target, { translateX: 0 });
       return (leaveInfo) => animation.stop();
-    }, {margin: "-150px"});
+    }, {margin: "-10px"});
   }, []);
 
   return (

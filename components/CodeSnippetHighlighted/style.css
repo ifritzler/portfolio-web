@@ -1,0 +1,23 @@
+pre {
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    background-color: #1B1C1B !important;
+    padding: 1.5rem !important;
+    border-radius: 1.5rem !important;
+    flex: 1 1 0% !important;
+    max-width: 90vw !important;
+
+}
+
+pre code {
+    background-color: transparent !important;
+}
+
+@media (min-width: 1024px) {
+    pre {
+        display: flex !important;
+        align-self: stretch !important;
+    }
+}
