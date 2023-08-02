@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 function Presentation() {
   return (
-    <section className="flex flex-col lg:flex-row justify-between items-center gap-12 lg:gap-24">
-      <div className="flex flex-col gap-6 flex-1 max-w-lg">
-        <div>
+    <section className="flex flex-col items-center justify-between gap-12 mt-4 lg:flex-row lg:gap-24 max-w-7xl">
+      <div className="flex flex-col items-center flex-1 w-full gap-6">
+        <div className="relative text-center lg:text-start">
           <h2 className="font-semibold leading-6">Welcome to my portfolio!</h2>
           <p className="max-w-md font-light leading-7">
             If you are a recruiter or someone who is interested in my profile, I

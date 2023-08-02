@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar/Navbar";
 import { Work_Sans } from "next/font/google";
 import "./globals.css";
+import "./highlight.css";
 
 const workSans = Work_Sans({ subsets: ["latin"] });
 
@@ -15,7 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={workSans.className} style={{paddingInline: "1rem"}}>
         <Navbar />
-        <main className="flex flex-1 flex-col justify-start lg:px-36 md:px-16 mt-32 gap-12">
+        <main className="flex flex-col justify-start flex-1 gap-12 mt-28 lg:px-36 md:px-16">
           {children}
         </main>
       </body>

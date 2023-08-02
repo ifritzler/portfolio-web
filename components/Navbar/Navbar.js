@@ -23,11 +23,11 @@ function Navbar() {
         isScrolled ? "bg-[#f9f9f9] dark:bg-[#0B0B0B]" : ""
       }`}
     >
-      <ul className="flex justify-center items-center p-4 gap-20 font-medium">
+      <ul className="flex items-center justify-center gap-20 p-4 font-medium">
         <motion.li whileHover={{ scale: 1.1 }}>
           <Link
             href={"/"}
-            className="flex justify-center items-center text-white dark:text-black w-16 h-16 text-4xl font-bold bg-black dark:bg-white rounded-full"
+            className="flex items-center justify-center w-16 h-16 text-4xl font-bold text-white bg-black rounded-full dark:text-black dark:bg-white"
           >
             <span className="text-gradient">I</span>F
           </Link>

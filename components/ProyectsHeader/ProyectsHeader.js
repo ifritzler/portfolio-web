@@ -10,17 +10,17 @@ function ProyectsHeader() {
     inView(projectSection, (info) => {
       const animation = animate(info.target, { translateX: 0 });
       return (leaveInfo) => animation.stop();
-    });
+    }, {margin: "-150px"});
   }, []);
 
   return (
     <section
-      className="flex flex-col sm:flex-row transition duration-700 p-8 gap-16 justify-center items-center -translate-x-full md:mt-16"
+      className="flex flex-col items-center justify-center gap-8 transition duration-700 -translate-x-full sm:flex-row"
       id="projects-section"
     >
-      <div className="max-w-lg order-2 md:order-1">
-        <h2 className="font-bold text-3xl">PROJECTS</h2>
-        <p className="leading-7 font-light max-w-md">
+      <div className="order-2 max-w-lg md:order-1">
+        <h2 className="text-3xl font-bold">PROJECTS</h2>
+        <p className="max-w-md font-light leading-7">
           Here, you can explore my public projects and their implementations. If
           you happen to be a technical lead or software engineer and notice any
           mistakes or areas for improvement, I would greatly appreciate your

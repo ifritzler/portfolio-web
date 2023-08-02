@@ -10,8 +10,8 @@ function MainHeader() {
   const name = "ILAN";
   const lastname = "FRITZLER";
   return (
-    <section className="flex flex-col lg:flex-row justify-between py-4">
-      <section className="relative flex flex-col justify-center items-center mx-auto lg:items-start lg:mx-0 max-w-fit">
+    <section className="flex flex-col justify-between w-full py-4 lg:flex-row max-w-7xl">
+      <section className="relative flex flex-col items-center justify-center mx-auto lg:items-start lg:mx-0 max-w-fit">
         <span className="text-[1.5rem] sm:text-[2rem]">HI THERE! I’M</span>
         <h1 className="text-[2.5rem] sm:text-[4rem] font-bold leading-[4rem]">
           <motion.span>
@@ -51,9 +51,9 @@ function MainHeader() {
       </section>
 
       {/* Social networks */}
-      <section className="relative flex flex-col justify-center gap-2 font-medium max-w-max my-0 lg:items-start items-center mx-auto mt-8 lg:mg-40 lg:mx-0">
-        <h2>Please check my social Networks!</h2>
-        <div className="flex justify-between items-center gap-2">
+      <section className="relative flex flex-col items-center justify-center gap-2 mx-auto my-0 mt-8 font-medium max-w-max lg:mg-40 lg:mx-0">
+        <h2 className="text-center">Please check my social Networks!</h2>
+        <div className="flex items-center justify-between gap-2">
           <SocialButton
             label={"Linkedin"}
             icon={<IconLinkedin />}
